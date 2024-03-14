@@ -1,4 +1,4 @@
-class Cine {
+class Seat {
     constructor(row, seatNumber) {
         this.row = row;
         this.seatNumber = seatNumber;
@@ -27,7 +27,7 @@ class Cinema {
 
         for (let i = 1; i <= rows; i++) {
             for (let j = 1; j <= this.seatPerRow; j++) {
-                this.seats.push(new Cine(i, j));
+                this.seats.push(new Seat(i, j));
             }
         }
     }
