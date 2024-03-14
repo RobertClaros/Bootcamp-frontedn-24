@@ -7,3 +7,8 @@ for (let i = 1; i < arr1.length; i++){
     }
 }
 console.log(smallest);
+
+//Functional 
+let arr2 = [12, 6, 10, 2, 45, 100];
+let smallest2 = arr2.reduce((acc, cur) => cur < acc ? cur : acc, arr1[0]);
+console.log(smallest2);
