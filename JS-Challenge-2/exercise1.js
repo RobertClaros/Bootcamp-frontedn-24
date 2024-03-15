@@ -10,5 +10,5 @@ console.log(smallest);
 
 //Functional 
 let arr2 = [12, 6, 10, 2, 45, 100];
-let smallest2 = arr2.reduce((acc, cur) => cur < acc ? cur : acc, arr1[0]);
+let smallest2 = arr2.reduce((acc, cur) => cur < acc ? cur : acc, arr2[0]);
 console.log(smallest2);
