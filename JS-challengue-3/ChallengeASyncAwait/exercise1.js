@@ -10,7 +10,8 @@ class HttpError extends Error {
   async function loadJson(url) {
     const response = await fetch(url)
         if (response.status === 200) {
-          return response.json();
+          const res = await response.json
+          return res;
         } else {
           throw new HttpError(response);
         }
