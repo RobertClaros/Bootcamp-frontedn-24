@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JalaSoft ID Card</title>
+</head>
+<body>
+    <script>
+    class IDCard extends HTMLElement {
+        constructor(){
+            super();
+
+            const shadow = this.attachShadow({mode:'open'});
+            const card = document.createElement('div');
+            card.textContent = ' JalaSoft ID Card';
+            shadow.appendChild(card);
+        }
+    }
+
+    customElements.define('id-card', IDCard);
+    </script>
+    <id-card></id-card>
+</body>
+</html>
